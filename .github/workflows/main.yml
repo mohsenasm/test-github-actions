@@ -13,3 +13,7 @@ jobs:
         with:
           zoom: '1.3'
           filepath: 'resume.pdf'
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: resume.html
