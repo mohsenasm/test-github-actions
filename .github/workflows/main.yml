@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to convert pdf to html
     steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v2
       - name: Hello world action step
         id: hello
         uses: mohsenasm/test-github-actions@main
