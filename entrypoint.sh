@@ -2,4 +2,4 @@
 
 set -ex
 
-pdf2htmlEX $1
+/usr/bin/pdf2htmlEX $1
