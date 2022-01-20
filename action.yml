@@ -1,0 +1,16 @@
+name: 'pdf2htmlEX'
+description: 'Github Action for converting pdf to html with pdf2htmlEX tool'
+inputs:
+  filename:
+    description: 'The PDF file'
+    required: true
+    default: 'main.pdf'
+  zoom:
+    description: 'Zoom parameter'
+    required: false
+    default: '1'
+runs:
+  using: 'docker'
+  image: 'bwits/pdf2htmlex:1.0'
+  args:
+    - pdf2htmlEX --zoom ${{ inputs.zoom }} ${{ inputs.filename }}
