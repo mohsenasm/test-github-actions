@@ -11,10 +11,8 @@ inputs:
     default: '1'
 runs:
   using: 'docker'
-  image: 'docker://bwits/pdf2htmlex:1.0'
-  entrypoint: pdf2htmlEX
+  image: 'Dockerfile'
   args: 
-    - --zoom 1.3 
-    - resume.pdf
+    - --zoom 1.3 resume.pdf
 
   # entrypoiasdasdasdasdasdasdnt: 'pdf2htmlEX --zoom ${{ inputs.zoom }} ${{ inputs.filename }}'
