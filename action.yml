@@ -14,5 +14,3 @@ runs:
   image: 'Dockerfile'
   args: 
     - --zoom ${{ inputs.zoom }} ${{ inputs.filename }}
-
-  # entrypoiasdasdasdasdasdasdnt: 'pdf2htmlEX --zoom ${{ inputs.zoom }} ${{ inputs.filename }}'
